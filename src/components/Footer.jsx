@@ -36,10 +36,10 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           //   viewport={{ once: true }}
-          className="mb-8 flex items-center gap-10"
+          className=" mb-8 flex flex-col md:flex-row items-start  md:items-center gap-10"
         >
-          <img src={logo} alt="UNIVOC" className="h-12" />
-          <p className="text-gray-400  mt-4 ">
+          <img src={logo} alt="UNIVOC" className="h-6  md:h-12" />
+          <p className="text-gray-400    md:mt-4 ">
             "empowering individuals with the skills to thrive in a changing
             world.
             <br />
@@ -49,7 +49,7 @@ export default function Footer() {
         </motion.div>
 
         {/* Footer Sections Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4  gap-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

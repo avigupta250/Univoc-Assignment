@@ -85,12 +85,12 @@ const Benefits = () => {
                           duration: 0.5,
                           ease: "easeInOut"
                         }}
-                        className={`gradient-animation absolute bg-blue-400 rounded-xl shadow-lg p-6
-                          ${isCenter ? 'w-40 md:w-80' : 'w-40 md:w-64 opacity-50'}
+                        className={`gradient-animation absolute bg-blue-400 rounded-xl shadow-lg p-4
+                          ${isCenter ? 'w-50 md:w-64' : 'w-50 md:w-64 opacity-50'}
                         `}
                       >
                         <div className={` mb-4 ${isCenter ? 'scale-110' : ''}`}>
-                          <motion.img src={benefits[index].icon} className='text-white w-[50px] px-2 ' alt="Icon"/>
+                          <motion.img src={benefits[index].icon} className='text-white w-[50px] px-3 ' alt="Icon"/>
                          
                         </div>
                         <h3 className=" md:text-xl text-white  font-semibold mb-2">{benefits[index].title}</h3>

@@ -39,7 +39,7 @@ const CareerSection = () => {
       >
         <motion.h2 
           variants={itemVariants}
-          className="text-2xl  mb-6 pb-2 border-b-2 border-gray-600"
+          className="text-sm md:text-2xl  mb-6 pb-2 border-b-2 border-gray-600"
         >
           Job Roles
         </motion.h2>

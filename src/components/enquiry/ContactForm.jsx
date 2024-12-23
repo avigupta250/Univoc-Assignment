@@ -21,7 +21,7 @@ const ContactForm = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       onSubmit={handleSubmit}
-      className="bg-white p-6 rounded-lg mb-8 shadow-lg"
+      className="bg-white p-6 md:mt-6 rounded-lg mb-8 shadow-lg"
     >
       <div className="space-y-4">
         {formFields.map((field) => (
