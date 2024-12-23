@@ -86,7 +86,7 @@ const Benefits = () => {
                           ease: "easeInOut"
                         }}
                         className={`gradient-animation absolute bg-blue-400 rounded-xl shadow-lg p-6
-                          ${isCenter ? 'w-60 md:w-80' : 'w-65 md:w-64 opacity-50'}
+                          ${isCenter ? 'w-40 md:w-80' : 'w-40 md:w-64 opacity-50'}
                         `}
                       >
                         <div className={` mb-4 ${isCenter ? 'scale-110' : ''}`}>
