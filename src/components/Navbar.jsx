@@ -38,11 +38,11 @@ export const Navbar = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
       className="relative flex-1 max-w-xl mx-4"
     >
-      <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+      <FiSearch className="absolute z-10 left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
       <input
         type="text"
         placeholder="What do you want to learn today"
-        className="w-full relative pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 transition-colors"
+        className="w-full  relative pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 transition-colors"
       />
       <span className='absolute -ml-7 mt-[13px] text-gray-400'><FaLocationArrow /></span>
     </motion.div>
@@ -81,12 +81,13 @@ export const Navbar = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="absolute top-full left-0 right-0 bg-white shadow-lg p-4 space-y-4"
+          className="absolute z-[100] top-19 rounded-md m-3 left-0 right-0 bg-white shadow-lg p-4 space-y-4"
         >
           <SearchBar />
+          <button></button>
           <ExploreButton />
           <div className="flex flex-col space-y-4">
-            <button className="text-gray-700 hover:text-gray-900 transition-colors">
+            <button className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
               Sign in
             </button>
             <button className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
