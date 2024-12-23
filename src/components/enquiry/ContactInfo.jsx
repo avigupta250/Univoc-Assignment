@@ -8,7 +8,7 @@ const ContactInfo = () => {
       initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
-      className="text-white"
+      className="text-white mt-6"
     >
       <h2 className="text-3xl font-bold mb-4">Have More Questions?</h2>
       <p className="mb-8">Reach out to us. Our support team is to assist you.</p>

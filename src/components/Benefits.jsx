@@ -41,11 +41,10 @@ const Benefits = () => {
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-[50px] flex flex-col mb-12 text-center"
+          className="text-[20px] md:text-[50px] flex flex-col border-b-2  border-gray-400 md:mb-12 text-center"
         >
           Benefits
-          <span className='h-[2px] w-[400px]   mx-auto  bg-slate-400'></span>
-        </motion.h2>
+           </motion.h2>
         
         <div className="relative  overflow-hidden">
           <div className="flex items-center justify-center">
@@ -87,15 +86,15 @@ const Benefits = () => {
                           ease: "easeInOut"
                         }}
                         className={`gradient-animation absolute bg-blue-400 rounded-xl shadow-lg p-6
-                          ${isCenter ? 'w-80' : 'w-64 opacity-50'}
+                          ${isCenter ? 'w-60 md:w-80' : 'w-65 md:w-64 opacity-50'}
                         `}
                       >
                         <div className={` mb-4 ${isCenter ? 'scale-110' : ''}`}>
                           <motion.img src={benefits[index].icon} className='text-white w-[50px] px-2 ' alt="Icon"/>
                          
                         </div>
-                        <h3 className="text-xl text-white  font-semibold mb-2">{benefits[index].title}</h3>
-                        <p className="text-gray-200">{benefits[index].description}</p>
+                        <h3 className=" md:text-xl text-white  font-semibold mb-2">{benefits[index].title}</h3>
+                        <p className="text-[12px] md:text-[20px] text-gray-200">{benefits[index].description}</p>
                       </motion.div>
                     );
                   })}

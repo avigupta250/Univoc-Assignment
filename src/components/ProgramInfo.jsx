@@ -11,35 +11,15 @@ const ProgramInfo = () => {
       variants={fadeIn}
       initial="initial"
       animate="animate"
-      className="container mx-auto px-20 py-12 grid grid-cols-2 gap-20"
-    >
-      <motion.div variants={slideIn}>
-        <h2 className="text-[50px]  ">About the Program</h2>
-        <div className='h-[2px] w-full bg-black'> </div>
-        <p className="text-gray-600 leading-relaxed">
-        The Electrical and Electronics course covers fundamental and 
-advanced topics in electrical engineering and electronics. It 
-includes subjects like circuit analysis, electrical machines, power 
-systems, signal processing, control systems, and electronics 
-devices. Students learn to design and analyze electrical circuits, 
-understand the operation of electrical machines and power 
-generation, and delve into communication systems, 
-microprocessors, and embedded systems. Practical applications 
-such as renewable energy systems, electrical instrumentation, and 
-automation technologies are also explored. The course prepares 
-students for careers in industries like power generation, 
-telecommunications, robotics, and electronics manufacturing, 
-equipping them with both theoretical knowledge and hands-on 
-experience   </p>
-
-        <Courses/>
-      </motion.div>
+      className="container mx-auto md:px-10 py-12 grid sm:grid-cols-1  md:grid-cols-2 gap-20"
+    > 
+     
       
 
       {/* Right side card */}
       <motion.div 
         variants={slideIn}
-        className="bg-white mt-10 mb-8 -[480px]  rounded-3xl flex flex-col -14 p-6"
+        className="bg-white mt-10 md:mb-8 -[480px] sm:order-2 md:order-1  rounded-3xl flex flex-col -14 p-6"
         style={{
           boxShadow: "0 0 15px 10px rgba(59, 130, 246, 0.5)", 
         }}
@@ -99,6 +79,31 @@ experience   </p>
           </motion.div>
          
         </div>
+      </motion.div>
+
+
+
+
+      <motion.div variants={slideIn} className=''>
+        <h2 className=" text-[20px] md:text-[50px]  ">About the Program</h2>
+        <div className='h-[2px] w-full bg-black'> </div>
+        <p className="text-gray-600 mt-2 leading-relaxed">
+        The Electrical and Electronics course covers fundamental and 
+advanced topics in electrical engineering and electronics. It 
+includes subjects like circuit analysis, electrical machines, power 
+systems, signal processing, control systems, and electronics 
+devices. Students learn to design and analyze electrical circuits, 
+understand the operation of electrical machines and power 
+generation, and delve into communication systems, 
+microprocessors, and embedded systems. Practical applications 
+such as renewable energy systems, electrical instrumentation, and 
+automation technologies are also explored. The course prepares 
+students for careers in industries like power generation, 
+telecommunications, robotics, and electronics manufacturing, 
+equipping them with both theoretical knowledge and hands-on 
+experience   </p>
+
+        <Courses/>
       </motion.div>
     </motion.div>
   );

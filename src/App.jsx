@@ -13,7 +13,7 @@ function App() {
     <div className="min-h-screen   bg-[#c4d7ff]"
     
     >
-      <div className='p-16'>
+      <div className=' p-4 md:p-16'>
       <Navbar />
       <Hero />
       <ProgramInfo />

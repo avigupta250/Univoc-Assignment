@@ -5,8 +5,12 @@ import image from "../../assets/Frame-2232-8.png"
 
 const EnquirySection = () => {
   return (
-    <div className=" bg-url() bg-blue-600 "
-    style={{ backgroundImage: `url(${image})` }}>
+    <div className=" bg-url() bg-blue-600  "
+    style={{ backgroundImage: `url(${image})`,
+    backgroundSize: "cover", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat", 
+         }}>
      
 
       <div className="container mx-auto px-6 relative">

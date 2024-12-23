@@ -28,12 +28,13 @@ const itemVariants = {
 
 const CareerSection = () => {
   return (
-    <div className="container mx-auto px-6 py-12 grid grid-cols-2 gap-12">
+    <div className="container mx-auto px-6 py-12 grid md:grid-cols-2 gap-12">
       {/* Job Roles Section */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
         
       >
         <motion.h2 
@@ -61,7 +62,7 @@ const CareerSection = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        // viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "-100px" }}
       >
         <motion.h2 
           variants={itemVariants}
@@ -100,6 +101,7 @@ const CareerSection = () => {
           ))}
         </div>
       </motion.div>
+
     </div>
   );
 };

@@ -83,7 +83,7 @@ const Courses = () => {
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-[50px] mb-6"
+        className="text-[20px] md:text-[50px] mb-6"
       >
         Courses
         <div className='h-[1px] w-full mb-6 bg-gray-600'></div>

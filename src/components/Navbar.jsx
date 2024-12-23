@@ -27,7 +27,7 @@ export const Navbar = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <img src={logo} alt="UNIVOC" className="h-12" />
+      <img src={logo} alt="UNIVOC" className="h-5  md:h-12" />
     </motion.div>
   );
 
@@ -55,7 +55,7 @@ export const Navbar = () => {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      className="flex items-center justify-end space-x-4"
+      className="hidden items-center  md:block justify-end space-x-4"
     >
       <button className="text-gray-700 border border-blue-600 rounded-full px-4 py-2 hover:text-gray-900 transition-colors">
         Sign in
@@ -70,7 +70,7 @@ export const Navbar = () => {
     <div className="lg:hidden">
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="p-2"
+        className=""
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
       >
         {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -99,8 +99,8 @@ export const Navbar = () => {
   );
 
   return (
-    <nav className="pb-10   border border-b-0 rounded-t-lg border-blue-700  shadow-sm py-4">
-      <div className="  mx-auto px-10 h-16">
+    <nav className=" md:pb-10   border border-b-0 rounded-t-lg border-blue-700  shadow-sm md:py-4">
+      <div className="  mx-auto sm:px-2 md:px-10 h-16">
         <div className="flex gap-8 items-center justify-between h-full">
           <Logo />
           
@@ -110,7 +110,7 @@ export const Navbar = () => {
             <SearchBar />
             
           </div>
-          <AuthButtons />
+        {  <AuthButtons />}
 
           {/* Mobile Navigation */}
           <MobileMenu />

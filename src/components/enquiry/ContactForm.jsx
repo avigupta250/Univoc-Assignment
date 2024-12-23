@@ -12,7 +12,7 @@ const formFields = [
 const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
+    
   };
 
   return (
@@ -21,7 +21,7 @@ const ContactForm = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       onSubmit={handleSubmit}
-      className="bg-white p-6 rounded-lg shadow-lg"
+      className="bg-white p-6 rounded-lg mb-8 shadow-lg"
     >
       <div className="space-y-4">
         {formFields.map((field) => (
@@ -40,21 +40,7 @@ const ContactForm = () => {
           </motion.div>
         ))}
 
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.3 }}
-        >
-          <select
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            required
-          >
-            <option value="">Select School Name</option>
-            <option value="school1">School 1</option>
-            <option value="school2">School 2</option>
-            <option value="school3">School 3</option>
-          </select>
-        </motion.div>
+       
 
         <motion.div
           initial={{ opacity: 0, x: 20 }}

@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <motion.div
       {...fadeIn}
-      className="relative h-[450px]  rounded-b-[40px] overflow-hidden"
+      className="relative h-[170px] md:h-[450px]  rounded-b-[40px] overflow-hidden"
       style={{
         backgroundImage:`url(${frame})`,  backgroundSize: "cover", 
         backgroundPosition: "center", 
@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="container  mx-auto z-10 px-6 py-12 text-white">
         <motion.div
           {...slideIn}
-          className="flex items-center gap-2 justify-start text-sm mb-2"
+          className="flex items-center gap-2 justify-start text-[10px] md:text-sm mb-2"
         >
           <span>Home</span>
           <span>{"›"}</span>
@@ -31,7 +31,7 @@ const Hero = () => {
           initial={{ x: -30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-4xl font-bold mb-4"
+          className="text-sm md:text-4xl font-bold mb-4"
         >
           Electrical and electronics
         </motion.h1>
@@ -42,7 +42,7 @@ const Hero = () => {
           className="flex items-center gap-2"
         >
           {[...Array(5)].map((_, i) => (
-            <StarIcon key={i} className="h-5 w-5 text-yellow-400" />
+            <StarIcon key={i} className="  h-5 w-5  text-yellow-400" />
           ))}
           <span>(4.5)</span>
         </motion.div>
@@ -55,7 +55,7 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
         src={image}
         alt="Engineer working"
-        className="absolute z-20  right-0 bottom-0 w-1/2 h-full object-cover"
+        className="absolute z-20 w-[200px] h-[230x] top-0 right-0  md:right-0 md:bottom-0 md:w-1/2 md:h-full object-cover"
       />
     </motion.div>
   );
