@@ -8,6 +8,7 @@ import { FiChevronDown, FiBook, FiCode, FiBriefcase, FiTrendingUp } from 'react-
 import { useState } from 'react';
 
 import { FiSearch, FiMenu, FiX } from 'react-icons/fi';
+import { FaLocationArrow } from 'react-icons/fa';
 
 const menuItems = [
   { icon: <FiBook />, label: 'Courses', description: 'Browse our course catalog' },
@@ -41,8 +42,9 @@ export const Navbar = () => {
       <input
         type="text"
         placeholder="What do you want to learn today"
-        className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 transition-colors"
+        className="w-full relative pl-10 pr-4 py-2 rounded-full border border-gray-200 focus:outline-none focus:border-blue-500 transition-colors"
       />
+      <span className='absolute -ml-7 mt-[13px] text-gray-400'><FaLocationArrow /></span>
     </motion.div>
   );
 

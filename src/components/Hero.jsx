@@ -9,22 +9,22 @@ const Hero = () => {
   return (
     <motion.div
       {...fadeIn}
-      className="relative h-[400px]  rounded-b-[40px] overflow-hidden"
+      className="relative h-[450px]  rounded-b-[40px] overflow-hidden"
       style={{
-        backgroundImage:`url(${frame})`,  backgroundSize: "cover", // Ensures the image covers the div
-        backgroundPosition: "center", // Centers the image
-        backgroundRepeat: "no-repeat", // Prevents the image from repeating
+        backgroundImage:`url(${frame})`,  backgroundSize: "cover", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat", 
       }}
     >
-      <div className="container mx-auto z-10 px-6 py-12 text-white">
+      <div className="container  mx-auto z-10 px-6 py-12 text-white">
         <motion.div
           {...slideIn}
-          className="flex items-center gap-2 text-sm mb-2"
+          className="flex items-center gap-2 justify-start text-sm mb-2"
         >
           <span>Home</span>
-          <span>›</span>
+          <span>{"›"}</span>
           <span>Integrated Degree Programs</span>
-          <span>›</span>
+          <span>{"›"}</span>
           <span>Electrical and electronics</span>
         </motion.div>
         <motion.h1
@@ -47,6 +47,8 @@ const Hero = () => {
           <span>(4.5)</span>
         </motion.div>
       </div>
+
+
       <motion.img
         initial={{ scale: 1.2, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
