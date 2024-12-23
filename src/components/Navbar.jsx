@@ -55,13 +55,13 @@ export const Navbar = () => {
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
-      className="hidden items-center  md:block justify-end space-x-4"
+      className=" flex items-center   justify-end space-x-4"
     >
-      <button className="text-gray-700 border border-blue-600 rounded-full px-4 py-2 hover:text-gray-900 transition-colors">
+      <button className="text-gray-700 border border-blue-600 text-[14px] min-w-[60px] md:text-[18px] rounded-full p-1   md:px-4 md:py-1 hover:text-gray-900 transition-colors">
         Sign in
       </button>
-      <button className="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors">
-        Register for free
+      <button className=" bg-blue-500 text-white  text-[14px] min-w-[60px] md:text-[18px] rounded-full p-1   md:px-4 md:py-1 hover:bg-blue-600 transition-colors">
+        Sign up
       </button>
     </motion.div>
   );
@@ -111,7 +111,7 @@ export const Navbar = () => {
             <SearchBar />
             
           </div>
-        {  <AuthButtons />}
+          <AuthButtons />
 
           {/* Mobile Navigation */}
           <MobileMenu />

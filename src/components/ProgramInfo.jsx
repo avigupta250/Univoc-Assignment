@@ -19,7 +19,7 @@ const ProgramInfo = () => {
       {/* Right side card */}
       <motion.div 
         variants={slideIn}
-        className="bg-white mt-10 md:mb-8   md:h-[450px] sm:order-2 md:order-1  rounded-3xl flex flex-col -14 p-6"
+        className="bg-white mt-10 md:mb-8  sm:h-[450px]  md:h-[700px] sm:order-2 md:order-1  rounded-3xl flex flex-col -14 p-6"
         style={{
           boxShadow: "0 0 15px 10px rgba(59, 130, 246, 0.5)", 
         }}
