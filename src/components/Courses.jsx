@@ -27,6 +27,9 @@ const Dropdown = ({ title, items, isOpen, onToggle }) => {
   return (
     <div className="mb-3 ">
       <motion.button
+       initial={{ opacity: 0, y: 20 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{ duration: 0.5, delay: 0.1 }}
         onClick={onToggle}
         className="w-full bg-white py-3  px-10 rounded-lg shadow-sm flex justify-between items-center"
         whileHover={{ backgroundColor: '#f8fafc' }}
@@ -81,8 +84,9 @@ const Courses = () => {
   return (
     <div className="border mt-10 border-slate-400 px-8 py-6  rounded-xl">
       <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+         initial={{ opacity: 0, y: 20 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.5, delay: 0.1 }}
         className="text-[20px] md:text-[50px] mb-6"
       >
         Courses

@@ -11,7 +11,7 @@ const ProgramInfo = () => {
       variants={fadeIn}
       initial="initial"
       animate="animate"
-      className="container mx-auto md:px-10 py-12 grid sm:grid-cols-1  md:grid-cols-2 gap-20"
+      className="container mx-auto p md:px-10 py-12 grid sm:grid-cols-1  md:grid-cols-2 gap-20"
     > 
      
       
@@ -19,7 +19,7 @@ const ProgramInfo = () => {
       {/* Right side card */}
       <motion.div 
         variants={slideIn}
-        className="bg-white mt-10 md:mb-8 -[480px] sm:order-2 md:order-1  rounded-3xl flex flex-col -14 p-6"
+        className="bg-white mt-10 md:mb-8   md:h-[450px] sm:order-2 md:order-1  rounded-3xl flex flex-col -14 p-6"
         style={{
           boxShadow: "0 0 15px 10px rgba(59, 130, 246, 0.5)", 
         }}
@@ -84,7 +84,9 @@ const ProgramInfo = () => {
 
 
 
-      <motion.div variants={slideIn} className=''>
+      <motion.div initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }} className=''>
         <h2 className=" text-[20px] md:text-[50px]  ">About the Program</h2>
         <div className='h-[2px] w-full bg-black'> </div>
         <p className="text-gray-600 mt-2 leading-relaxed">

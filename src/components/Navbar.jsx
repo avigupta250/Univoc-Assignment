@@ -27,7 +27,7 @@ export const Navbar = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <img src={logo} alt="UNIVOC" className="h-5  md:h-12" />
+      <img src={logo} alt="UNIVOC" className="h-5 px-2  md:h-12" />
     </motion.div>
   );
 
@@ -67,7 +67,7 @@ export const Navbar = () => {
   );
 
   const MobileMenu = () => (
-    <div className="lg:hidden">
+    <div className="lg:hidden px-2">
       <button
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className=""
