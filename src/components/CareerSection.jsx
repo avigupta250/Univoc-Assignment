@@ -39,7 +39,7 @@ const CareerSection = () => {
       >
         <motion.h2 
           variants={itemVariants}
-          className="text-sm md:text-2xl  mb-6 pb-2 border-b-2 border-gray-600"
+          className="text-2xl  mb-6 pb-2 border-b-2 border-gray-600"
         >
           Job Roles
         </motion.h2>
@@ -48,7 +48,7 @@ const CareerSection = () => {
             <motion.li
               key={index}
               variants={itemVariants}
-              className="flex items-center space-x-2 text-gray-700"
+              className="flex items-center  space-x-2 text-gray-700"
             >
               <span className="w-1 h-1 bg-black rounded-full"></span>
               <span>{role}</span>
