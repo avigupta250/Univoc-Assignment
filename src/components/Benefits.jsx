@@ -9,9 +9,6 @@ const Benefits = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-
-  
-
   useEffect(() => {
     let interval;
     if (isAutoPlaying) {
